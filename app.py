@@ -7,7 +7,6 @@ from flask import Flask, request
 from flask import render_template
 
 from flask_heroku import Heroku
-data
 
 TOKEN = '351697767:AAFV5Y2RewXLLXGbcGohE7reo3O1-lb0LpU'
 
