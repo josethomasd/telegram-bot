@@ -19,7 +19,7 @@ app = Flask(__name__)
 def index():
     return "Hello World"
 
-@app.route("/webhook")
+@app.route("/webhook", methods=['POST'])
 def webhook():
 	data = request.get_json()
 	log(data)
