@@ -22,11 +22,9 @@ def index():
 
 @app.route("/set_webhook")
 def get():
-        x = urlfetch.set_default_fetch_deadline(60)
-        print x
-        url = "https://stark-badlands-91912.herokuapp.com"
-        if url:
-            self.response.write(json.dumps(json.load(urllib2.urlopen(BASE_URL + 'setWebhook', urllib.urlencode({'url': url})))))
+	url = "https://stark-badlands-91912.herokuapp.com"
+    if url:
+        self.response.write(json.dumps(json.load(urllib2.urlopen(BASE_URL + 'setWebhook', urllib.urlencode({'url': url})))))
 
 def log(message):  # simple wrapper for logging to stdout on heroku
     print str(message)
