@@ -1,0 +1,8 @@
+Flask==0.11
+flask-heroku==0.1.9
+
+responses==0.5.1
+
+gunicorn==19.6.0
+requests==2.10.0
+
