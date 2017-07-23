@@ -23,8 +23,8 @@ def index():
 def set_webhook():
 	url = "https://stark-badlands-91912.herokuapp.com"
 	data = json.dumps(json.load(urllib2.urlopen(BASE_URL + 'setWebhook', urllib.urlencode({'url': url}))))
-	return requests.post(BASE_URL, data=data)
-
+	r = requests.post(BASE_URL, data=data)
+	return 200
 def log(message):  # simple wrapper for logging to stdout on heroku
     print str(message)
     sys.stdout.flush()
